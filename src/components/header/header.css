@@ -11,20 +11,13 @@ header{
 }
 
 .header__special{
-    font-weight: bold;
-    --s: 0.15em;   /* the thickness of the line */
-    --c: #2c4bff; /* the color */
-    
-    color: #0000;
-    padding-bottom: var(--s);
-    background: 
-      linear-gradient(90deg,var(--c) 50%,rgb(255, 255, 255) 0) calc(100% - var(--_p,0%))/200% 100%,
-      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
-    -webkit-background-clip: text,padding-box;
-            background-clip: text,padding-box;
-    transition: 0.5s;
+    font-size: 25px;
+    transition: 2.0s;
   }
-.header__special:hover {--_p: 100%}
+.header__special:hover {
+    background: linear-gradient(rgb(9, 232, 162), rgb(1, 158, 249));
+    display: inline-block;
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~ CTA ~~~~~~~~~~~~~~~~~~~~~~~~*/
 .cta{
